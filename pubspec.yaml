@@ -1,7 +1,7 @@
 name: flutter_application_1
 description: A new Flutter project.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none' 
 
 version: 1.0.0+1
 
@@ -15,6 +15,10 @@ dependencies:
   shared_preferences: ^2.2.2
   cupertino_icons: ^1.0.2
   namer: ^1.0.0
+  google_fonts: ^6.1.0
+  flutter_native_splash: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+  path_provider: ^2.1.2
 
 dev_dependencies:
   flutter_test:
@@ -24,3 +28,22 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  
+  assets:
+    - assets/
+    - assets/splash.png
+    - assets/icon.png
+    - assets/icon_foreground.png
+
+flutter_native_splash:
+  color: "#F5E6E3"
+  image: assets/splash.png
+  android: true
+  ios: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#F5E6E3"
+  adaptive_icon_foreground: "assets/icon_foreground.png"
